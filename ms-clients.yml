@@ -69,5 +69,5 @@ spring:
 
 app:
   security:
-    public-urls: /actuator/health
+    public-urls: /actuator/health,/actuator/refresh
   
