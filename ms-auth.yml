@@ -77,7 +77,7 @@ app:
       access-token-expiration-seconds: 900
     cookie:
       same-site: None
-    public-urls: /api/auth/login,/api/auth/refresh,/api/auth/logout,/,/index.html,/css/**,/js/**,/images/**,/actuator/health,/actuator/refresh
+    public-urls: /,/api/auth/login,/api/auth/refresh,/api/auth/logout,/,/index.html,/css/**,/js/**,/images/**,/actuator/health,/actuator/refresh
   initializer:
     first-user-code: ${FIRST_USER_CODE}
     first-user-name: ${FIRST_USER_NAME}

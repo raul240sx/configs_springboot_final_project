@@ -85,6 +85,11 @@ spring:
                 allowCredentials: true
                 maxAge: 3600
           routes:
+            - id: greeting
+              uri: lb://MS-AUTH
+              predicates:
+                - Path=/
+                - Method=GET
             - id: ms-auth-auth
               uri: lb://MS-AUTH
               predicates:
