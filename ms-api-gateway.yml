@@ -88,7 +88,7 @@ spring:
             - id: greeting
               uri: lb://MS-AUTH
               predicates:
-                - Path=/
+                - Path=/,/css/**
                 - Method=GET
             - id: ms-auth-auth
               uri: lb://MS-AUTH
