@@ -32,6 +32,8 @@ eureka:
     secure-port: 8024
     non-secure-port-enabled: false
   client:
+    refresh:
+        enable: false
     tls:
       enabled: true
       key-store: file:${KEYSTORE_LOCATION}
